@@ -2,34 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hello</title>
+    <title>Bakytzhan Assanov</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap">
     <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB5-Free_7.1.0/css/mdb.min.css">
     <style>
         #intro {
-          background-image: url("/darkwater.jpg");
-          height: 100vh;
+            background-image: url("/darkwater.jpg");
+            height: 100vh;
         }
-        .navbar .nav-link {
-          color: #fff !important;
+        .btn {
+            font-size: calc(1.375rem + 0.5vw);
+            margin: 0 0.3rem;
         }
-        h1, .h1 {
-          font-size: calc(2.375rem + 1.5vw);
+        .btn.mobile {
+            font-size: calc(1rem + 0.5vw);
         }
-        @media (min-width: 1200px) {
-          h1, .h1 {
-            font-size: 3.5rem;
-          }
-        }
-
-        h5, .h5 {
-          font-size: 1.75rem;
-        }
-
-        p {
-          margin-top: 0;
-          margin-bottom: 1rem;
+        @media (orientation: portrait) {
+            h1, .h1 {
+                font-size: calc(2.375rem + 3.5vw);
+            }
+            h5, .h5 {
+                font-size: calc(1.375rem + 1.5vw);
+            }
+            p, .p {
+                font-size: calc(1.375rem + 0.5vw);
+            }
+            .btn {
+                font-size: calc(2.375rem + 1.5vw);
+                margin: 1rem;
+            }
+            .btn.mobile {
+                font-size: calc(2rem + 1.5vw);
+            }
         }
     </style>
 </head>
@@ -43,16 +48,16 @@
                     <h5 class="mb-4">Expert Software Engineer</h5>
                     <div class="text-center">
                         <p>feel free to contact me:</p>
-                        <a href="tel:+77766092229" class="btn btn-outline-light btn-floating mx-1">
+                        <a href="tel:+77766092229" class="btn btn-outline-light btn-floating mobile border-0">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/bmassanov/" class="btn btn-outline-light btn-floating mx-1">
-                            <i class="fa-brands fa-instagram"></i>
+                        <a href="https://wa.me/77766092229" class="btn btn-outline-light btn-floating border-0">
+                            <i class="fa-brands fa-whatsapp"></i>
                         </a>
 
-                        <a href="https://wa.me/77766092229" class="btn btn-outline-light btn-floating mx-1">
-                            <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://www.instagram.com/bmassanov/" class="btn btn-outline-light btn-floating border-0">
+                            <i class="fa-brands fa-instagram"></i>
                         </a>
                     </div>
                 </div>
