@@ -9,8 +9,9 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style>
         #intro {
-            background-image: url("/darkwater.jpg");
+            background-image: url("/background.jpg");
             height: 100vh;
+            filter: contrast(1.2) grayscale(80%);
         }
         .btn {
             font-size: calc(1.375rem + 0.5vw);
@@ -19,16 +20,44 @@
         .btn.mobile {
             font-size: calc(1rem + 0.5vw);
         }
+        h1, .h1 {
+            font-family: Gza;
+            line-height: 68px;
+            font-size: 55px;
+            letter-spacing: 0;
+        }
+        h3, .h3{
+            font-family: Relative;
+            font-size: 25px;
+        }
+        h5, .h5{
+            font-family: Relative;
+            font-size: 16px;
+            text-rendering: geometricPrecision;
+            etter-spacing: 1.5px;
+            color: #fff;
+            opacity: .5;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: opacity .3s;
+        }
+        h5 a{
+            text-decoration: none!important;
+            color: inherit;
+        }
+        p, .p {
+            font-family: Relative;
+            font-size: 16px;
+        }
+        .mail {
+            z-index: 1000001;
+            position: absolute;
+            transform: translateX(-50%);
+            transform-origin: 100% 50%;
+            left: 50%;
+            bottom: 40px;
+        }
         @media (orientation: portrait) {
-            h1, .h1 {
-                font-size: calc(2.375rem + 3.5vw);
-            }
-            h5, .h5 {
-                font-size: calc(1.375rem + 1.5vw);
-            }
-            p, .p {
-                font-size: calc(1.375rem + 0.5vw);
-            }
             .btn {
                 font-size: calc(2.375rem + 1.5vw);
                 margin: 1rem;
@@ -42,24 +71,29 @@
 <body style="font-size: 1.2rem">
 <header>
     <div id="intro" class="bg-image shadow-2-strong">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
             <div class="container d-flex align-items-center justify-content-center text-center h-100">
                 <div class="text-white" data-mdb-theme="dark">
-                    <h1 class="mb-3">Bakytzhan Assanov</h1>
-                    <h5 class="mb-4">Expert Software Engineer</h5>
+                    <h1 class="mb-2"><strong>Юридические услуги</strong></h1>
+                    <h3 class="mb-5">Защита прав и интересов в суде</h3>
                     <div class="text-center">
-                        <p>feel free to contact me:</p>
-                        <a href="tel:+77766092229" class="btn btn-outline-light btn-floating mobile border-0">
+                        <p>Свяжитесь с нами для получения консультации:</p>
+                        <a href="tel:+77078570722" class="btn btn-outline-light btn-floating mobile border-0">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                         </a>
 
-                        <a href="https://wa.me/77766092229" class="btn btn-outline-light btn-floating border-0">
+                        <a href="https://wa.me/77078570722" class="btn btn-outline-light btn-floating border-0">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/bmassanov/" class="btn btn-outline-light btn-floating border-0">
+                        <a href="https://www.instagram.com/_u/instagram/" class="btn btn-outline-light btn-floating border-0">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
+                    </div>
+                    <div class="mail">
+                        <h5>
+                            <a href="mailto:test@test.test?subject=Запрос с сайта">test@test.test</a>
+                        </h5>
                     </div>
                 </div>
             </div>
